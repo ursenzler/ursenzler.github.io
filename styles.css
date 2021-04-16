@@ -1,0 +1,183 @@
+:root {
+    --lake: #9DB5CD
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,summary,figcaption,.presentations li span:first-child, .publications li span:first-child {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+summary {
+    cursor: pointer;
+    outline: none;
+}
+
+h2 {
+    background-color: var(--lake);
+    padding: 1rem .1rem 1rem 1rem;
+    margin: 2rem 0 0rem 0
+}
+
+.biography {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bio_grid {
+    display: grid;
+    grid-template: 
+        "title title title debutton enbutton"
+        "content content content content content";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 4rem 1fr;
+    min-width: 30rem;
+}
+
+.biography input { display: none; }
+.biography input + label { display: inline-block; }
+.biography input ~ .bio { display: none }
+.biography #de:checked ~ .de, .biography #en:checked ~ .en {
+    display: block;
+}
+.biography input + label { 
+    cursor: pointer; 
+    background-color: var(--lake);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.biography input:checked + label {
+    background: #c3d1df;
+}
+#de { grid-area: debutton; }
+#en { grid-area: enbutton; }
+
+.biography h2 {
+    grid-area: title;
+    margin-top: 0;
+    display: none;
+}
+.biography .bio {
+    grid-area: content;
+    padding: 0 1rem;
+}
+
+.biography div {
+    flex-basis: 10%;
+    flex-grow: 1;
+}
+
+.biography img {
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.contact a {
+    flex: 1 1 auto;
+}
+
+.presentations ul li {
+    display: flex;
+    flex-direction: column;
+
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #9DB5CD;
+
+    padding-left: 1rem;
+    margin-bottom: 1.8rem;
+}
+
+.presentations h3 {
+    margin-left: 1rem;
+}
+
+.presentations ul li span:first-child {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.presentations p {
+    margin: .2rem 0;
+}
+
+.publications ul li {
+    display: flex;
+    flex-direction: column;
+
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #9DB5CD;
+}
+
+.publications ul li span:first-child {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.publications ul li span:nth-child(3) {
+    font-size: smaller;
+    font-style: italic;
+}
+
+.publications ul li {
+    padding-left: 1rem;
+    margin-bottom: .8rem;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.videos figure {
+    flex-basis: 20%;
+}
+
+.past p {
+    padding-left: 1rem;
+}
+.past summary {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.past details {
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #9DB5CD;
+
+    margin-left: 1rem;
+    margin-bottom: .2rem;
+    padding-left: 1rem;
+}
+
+.past details span:nth-of-type(1), .past details span:nth-of-type(2) {
+    font-size: smaller;
+    font-style: italic;
+    margin-right: 0.6rem;
+}
+
+.past details span:nth-of-type(3) {
+    display: inline-block;
+}
+
+.past details span:last-child {
+    margin-bottom: 1rem;
+}
