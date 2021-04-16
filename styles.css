@@ -37,7 +37,7 @@ h2 {
         "content content content content content";
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 4rem 1fr;
-    min-width: 30rem;
+    min-width: 20rem;
 }
 
 .biography input { display: none; }
