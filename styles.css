@@ -181,3 +181,11 @@ h2 {
 .past details span:last-child {
     margin-bottom: 1rem;
 }
+
+footer {
+    background-color: var(--lake);
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+}
