@@ -91,6 +91,10 @@ h2 {
     flex: 1 1 auto;
 }
 
+.presentations ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 .presentations ul li {
     display: flex;
     flex-direction: column;
@@ -100,7 +104,10 @@ h2 {
     border-left-color: #9DB5CD;
 
     padding-left: 1rem;
+    margin-right: 3rem;
     margin-bottom: 1.8rem;
+
+    max-width: 30rem;
 }
 
 .presentations h3 {
