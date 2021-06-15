@@ -123,6 +123,11 @@ h2 {
     margin: .2rem 0;
 }
 
+.publications ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .publications ul li {
     display: flex;
     flex-direction: column;
@@ -130,6 +135,10 @@ h2 {
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: #9DB5CD;
+
+    max-width: 30rem;
+
+    margin-right: 3rem;
 }
 
 .publications ul li span:first-child {
