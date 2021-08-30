@@ -91,11 +91,11 @@ h2 {
     flex: 1 1 auto;
 }
 
-.presentations ul {
+.presentations .presentations-list {
     display: flex;
     flex-wrap: wrap;
 }
-.presentations ul li {
+.presentations .presentation-item {
     display: flex;
     flex-direction: column;
 
@@ -121,6 +121,10 @@ h2 {
 
 .presentations p {
     margin: .2rem 0;
+}
+
+.presentation-item ul li {
+    list-style: disc;
 }
 
 .publications ul {
