@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-h1,h2,h3,summary,figcaption,.presentations li span:first-child, .publications li span:first-child {
+h1,h2,h3,summary,figcaption,.presentations li span:first-child, .publications li span:first-child, .consulting li span:first-child {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -89,6 +89,39 @@ h2 {
 
 .contact a {
     flex: 1 1 auto;
+}
+
+.consulting .consulting-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.consulting .consulting-item {
+    display: flex;
+    flex-direction: column;
+
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #9DB5CD;
+
+    padding-left: 1rem;
+    margin-right: 3rem;
+    margin-bottom: 1.8rem;
+
+    max-width: 30rem;
+}
+
+.consulting ul li span:first-child {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.consulting p {
+    margin: .2rem 0;
+}
+
+.pricing {
+    font-size: smaller;
+    margin-left: 1rem;
 }
 
 .presentations .presentations-list {
