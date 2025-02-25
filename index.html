@@ -37,7 +37,7 @@
         <div class="bio de">
             <p>Ich bin ein Software-Architekt und Software-Entwickler mit einem Fokus auf die .Net Plattform und Azure.
                Ich baue gerne Produkte mit einem kurzen und häufigen Feedback-Zyklus - einige würden das agil oder Continuous Delivery nennen.
-               Neben der Arbeit am Zeiterfassungs-Produkt <href src="www.timerocket.ch">TimeRocket</href>, bin ich ein Berater für
+               Neben der Arbeit am Zeiterfassungs-Produkt <a href="https://www.timerocket.ch">TimeRocket</a>, bin ich ein Berater für
                Software-Architektur und technische Aspekte für Teamarbeit mittels Continuous Delivery wie evolvierbares Design, Test-Driven-Development und ähnlichem.
                 Und ich bin der Co-Host der <a href="https://www.dotnet-zentral.ch/">.Net Usergroup Zentralschweiz</a> und blogge auf <a href="https://www.planetgeek.ch/">Planetgeek</a>.
             </p>
@@ -47,7 +47,7 @@
         <div class="bio en">
             <p>I'm a software architect and software developer with a focus on the .Net platform and Azure.
                I like to build products with a short and frequent feedback loop to its users and customers - some would call this agile or continuous delivery.
-               Besides working on the time tracking product <href src="www.timerocket.ch">TimeRocket</href>, I'm a consultant on
+               Besides working on the time tracking product <a href="https://www.timerocket.ch">TimeRocket</a>, I'm a consultant on
                software architecture and technical aspects of working as a team using continuous delivery like evolvable design, test-driven-development and alike.
                And I'm the co-host of the <a href="https://www.dotnet-zentral.ch/">.Net User Group Zentralschweiz</a>. You can find my blog <a href="https://www.planetgeek.ch/">here</a>.
             </p>
@@ -75,6 +75,11 @@
     <h2>Meine aktuellen Vortäge und Workshops</h2>
     <h3>Präsentationen</h3>
     <ul class="presentations-list">
+        <li class="presentation-item">
+            <span>Onion, Hexagonal, Clean or Fractal Architecture? All of them, and more!!</span>
+            <p>Onion, Hexagonal, Clean, or Fractal Architectures aim to organize how we deal with dependencies in our software architectures.</p>
+            <p>But which one should we choose? After distilling the essence of each approach and comparing the advantages and challenges, I’ll show how to combine all of them into an approach to use evolutionary steps towards an architecture that fits your needs from day one until the software dies. You’ll see that layers and slices aren’t enough. A modularisation that fits the domain and simplifies understandability, changeability, and extensibility must go beyond these concepts.</p>
+        </li>
         <li class="presentation-item">
             <span>Architekturaspekte – evolutionäre Architekturentwicklung</span>
             <p>Wenn wir mit der Architektur einer neuen Software starten, dann müssen wir an vieles denken. Unter anderem an 23 Architekturaspekte, wie Persistenz, Kommunikation, Übersetzungen, Archivierung, Skalierung, Security, Exception Handling usw.</p>
@@ -286,19 +291,55 @@ Doch braucht es bei all den selbst organisierten und cross-funktionalen Teams ü
 </section>
 
 <section class="past">
-    <h2 id="future">Zukünftige Vorträge</h2>
+    <h2 id="past">Vergangene Vorträge und Workshops</h2>
+    <p>Es sind nur Vorträge und Workshops von Konferenzen und Meetups aufgelistet, keine Firmen internen.</p>
+
     <details>
-        <summary>25.-29.09.2023 Mainz/virtuell: Bi-temporales Event Sourcing</summary>
-        <span>Vortrag</span>
-        <span>Basta 2023</span>
+        <summary>Evolutionäre Softwarearchitektur</summary>
+        <span>Workshop</span>
+        <span>Workshop Tage 2024</span>
         <div>
-            <p>Bi-temporale Events haben nicht nur ein einzelnes Datum (z. B. das Datum, wann das Event aufgetreten ist), sondern zwei Daten (z. B. das Datum des Auftretens und wann es sich auswirkt). So mache ich beispielsweise heute eine Überweisung, welche Ende Monat ausgeführt wird.</p>
-            <p>Im Gegensatz zu normalen Events, müssen bei der Projektion von bi-temporalen Events und bei deren Read Models einige zusätzliche Dinge berücksichtigt werden: Ordnung der Events nach zwei Dimensionen, Bedeutung eines früheren effektiven Datums (Überschreibend, Einfügend) usw.</p>
-            <p>In dieser Präsentation zeige ich euch nach einer kurzen Einführung in «normales» Event-Sourcing die Konzepte und Implementationen, welche wir in unserer Zeiterfassungssoftware einsetzen, um die Möglichkeiten von bi-temporalen Daten zu nutzen. Ich zeige euch die Projektoren für einfache Werte und für Timelines, um einfach auf historische Daten zugreifen zu können; sowie für mengenbasierte Werte und Werte mit einem Lebenszyklus.</p>
+            <p>
+                <i>Die Teilnehmenden lernen an Fallbeispielen das Erstellen von Softwarearchitekturen in vielen kleinen evolutionären Schritten – statt mittels Big-Design-Up-Front.
+                In der Übung werden einzelne Architekuraspekte wie Datenspeicherung, Skalierung, Kommunikation betrachtet und jeweils potenzielle Evolutionswege erarbeitet.
+                Ziel ist eine Architektur, welche sich ständig an die aktuellen Bedürfnisse (mehr Benutzer, Wachstum der Codebasis, zusätzlich Anforderungen bezüglich Internationalisierung, Archivierung, etc.) anpassen kann.</i>
+            </p>
+            <p>
+                Heutige Softwaresysteme sind ständigen Änderungen unterworfen: neue oder obsolete Anforderungen, Technologieänderungen, Benutzerwachstum, Datenwachstum und vieles mehr.
+                Somit muss sich die Software und mit ihr die Architektur ständig anpassen.
+            </p>
+            <p>
+                Dieser Workshop zeigt zuerst das grundlegende Vorgehen bezüglich Evolution einer Softwarearchitektur. Anschliessend üben die Teilnehmenden dieses Vorgehen an drei bis vier Architekturaspekten aus total 23 (Datenspeicherung, Skalierung, Internationalisierung, Layering & Struktur, historische Daten, Antwortzeiten usw.). In mehreren Runden besprechen wir die aktuellen Lösungen und besprechen Wege zur Verbesserung und den weiteren Evolutionsschritten. Zum Abschluss vertiefen wir das Gelernte durch einen Rückblick auf die wichtigsten Erkenntnisse der Teilnehmenden.
+            </p>
+            <p>
+                Die Teilnehmenden nehmen mit, wie eine Softwarearchitektur über die ganze Lebensdauer eines Softwaresystems passend zur aktuellen Situation und möglichst simpel in Schritten entworfen werden kann.
+            </p>
+            <p>
+                Die Übungen werden in Gruppen konzeptionell mit Papier, Stift und Flipchart ausgeführt.
+            </p>
         </div>
     </details>
     <details>
-        <summary>25.-29.09.2023 Mainz/virtuell: Mythen über F#</summary>
+        <summary>Onion, Hexagonal, Clean or Fractal Architecture? All of them, and more!!</summary>
+        <span>Vortrag</span>
+        <span>.NET Day Switzerland 2024, Basta 2024</span>
+        <div>
+            <p>Onion, Hexagonal, Clean, or Fractal Architectures aim to organize how we deal with dependencies in our software architectures.</p>
+            <p>But which one should we choose? After distilling the essence of each approach and comparing the advantages and challenges, I’ll show how to combine all of them into an approach to use evolutionary steps towards an architecture that fits your needs from day one until the software dies. You’ll see that layers and slices aren’t enough. A modularisation that fits the domain and simplifies understandability, changeability, and extensibility must go beyond these concepts.</p>
+        </div>
+    </details>
+    <details>
+        <summary>Wenn Scrum zu langsam ist – Das Caretaker-Model</summary>
+        <span>Vortrag</span>
+        <span>IT-Tage 365 2023</span>
+        <div>
+            <p>Das Manifest der agilen Softwareentwicklung sagt, wir sollen bessere Wege erschließen, um Software zu entwickeln. Wir haben Scrum hinter uns gelassen, weil wir schneller lernten als der Sprint lang war und der Sprint uns mehr blockierte als unterstützte. Besser passt uns die Trennung der Zyklen für Planung, Retrospektive, Auslieferung und Feedback. Und dass sich jedes Teammitglied von Anfang bis Ende einbringen kann, hat die Motivation im Team stark erhöht.</p>
+            <p>Dies ist das Caretaker-Model.</p>
+            <p><a href="https://www.planetgeek.ch/2023/06/13/the-caretaker-model-our-way-of-working/">Blog post</a></p>
+        </div>
+    </details>
+    <details>
+        <summary>Mythen über F#</summary>
         <span>Vortrag</span>
         <span>Basta 2023</span>
         <div>
@@ -316,43 +357,9 @@ Doch braucht es bei all den selbst organisierten und cross-funktionalen Teams ü
         </div>
     </details>
     <details>
-        <summary>10.11.2023 virtuell: Collective Product Ownership</summary>
-        <span>Vortrag</span>
-        <span>TeamBoostDay 2023</span>
-        <div>
-            <p>Collective Product Ownership bedeutet, dass alle Mitglieder des Produktsteams bei der Gestaltung des Produkts Einfluss nehmen können.</p>
-            <p>Dies führt neben einer gestärkten Identifizierung mit dem Produkt zu mehr Motivation, diverseren Produktentscheidungen, mehr Effizienz und weniger Risiko als zum Beispiel das Delegieren dieser Aufgabe an einen einzelnen Product Owner.</p>
-            <p>Im Workshop betrachten wir, welche Herausforderungen beim Wechsel zu Collective Product Ownership bestehen, wie wir diese meistern und welche Effekte daraus resultieren. Einer dieser Effekte ist, dass sich das Team als Ganzes in der Domäne, in der es sich bewegt, entwickelt in dem es die zu lösenden Probleme aus erster Hand kennt und so effizienter zu effektiven Lösungen beitragen kann.</p>
-        </div>
-    </details>
-<!--    <details>-->
-<!--        <summary></summary>-->
-<!--        <span>Vortrag</span>-->
-<!--        <span></span>-->
-<!--        <div>-->
-<!--            <p></p>-->
-<!--        </div>-->
-<!--    </details>-->
-</section>
-
-<section class="past">
-    <h2 id="past">Vergangene Vorträge und Workshops</h2>
-    <p>Es sind nur Vorträge und Workshops von Konferenzen und Meetups aufgelistet, keine Firmen internen.</p>
-
-    <details>
-        <summary>Wenn Scrum zu langsam ist – Das Caretaker-Model</summary>
-        <span>Vortrag</span>
-        <span>IT-Tage 365 2023</span>
-        <div>
-            <p>Das Manifest der agilen Softwareentwicklung sagt, wir sollen bessere Wege erschließen, um Software zu entwickeln. Wir haben Scrum hinter uns gelassen, weil wir schneller lernten als der Sprint lang war und der Sprint uns mehr blockierte als unterstützte. Besser passt uns die Trennung der Zyklen für Planung, Retrospektive, Auslieferung und Feedback. Und dass sich jedes Teammitglied von Anfang bis Ende einbringen kann, hat die Motivation im Team stark erhöht.</p>
-            <p>Dies ist das Caretaker-Model.</p>
-            <p><a href="https://www.planetgeek.ch/2023/06/13/the-caretaker-model-our-way-of-working/">Blog post</a></p>
-        </div>
-    </details>
-    <details>
         <summary>Bi-temporal Event Sourcing</summary>
         <span>Vortrag</span>
-        <span>.Net Usergroup Zentralschweiz 2023</span>
+        <span>.Net Usergroup Zentralschweiz 2023, Basta Spring 2023</span>
         <div>
             <p>Bi-temporale Events haben nicht nur ein einzelnes Datum (z.B. das Datum, wann das Event aufgetreten ist), sondern zwei Daten (z.B. das Datum des Auftretens und wann es sich auswirkt). So mache ich beispielsweise heute eine Überweisung, welche Ende Monat ausgeführt wird.</p>
             <p>Im Gegensatz zu normalen Events, müssen bei der Projektion von bi-temporalen Events und bei deren Read-Models einige zusätzliche Dinge berücksichtigt werden: Ordnung der Events nach zwei Dimensionen, Bedeutung eines früheren effektiven Datums (Überschreibend, Einfügend) usw. In dieser Präsentation zeigt Urs euch nach einer kurzen Einführung in «normales» Event-Sourcing, die Konzepte und Implementationen, welche wir in unserer Zeiterfassungssoftware einsetzen, um die Möglichkeiten von bi-temporalen Daten zu nutzen. Urs zeigt euch die Projektoren für einfache Werte und für Timelines, um einfach auf historische Daten zugreifen zu können; sowie für Mengen-basierte Werte und Werte mit einem Lebenszyklus.</p>
